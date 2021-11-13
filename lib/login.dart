@@ -78,13 +78,24 @@ class _LoginPageState extends State<LoginPage> {
                   },
                 ),
                 RaisedButton(
-                  child: Text('Login'),
+                  child: Text('Signin'),
                   elevation: 8.0,
                   shape: BeveledRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(7.0)),
                   ),
                   onPressed: () {
-                    print("login Pressed : login");
+                    print("signin Pressed : login");
+                    Navigator.pop(context);
+                  },
+                ),
+                RaisedButton(
+                  child: Text('Signon'),
+                  elevation: 8.0,
+                  shape: BeveledRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(7.0)),
+                  ),
+                  onPressed: () {
+                    print("signon Pressed : login");
                     Navigator.pop(context);
                   },
                 ),
