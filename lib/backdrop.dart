@@ -269,6 +269,7 @@ class _BackdropState extends State<Backdrop> with SingleTickerProviderStateMixin
           ),
           onPressed: () {
             Navigator.push(
+              print("setup");
               context,
               MaterialPageRoute(builder: (BuildContext context) => LoginPage()),
             );
