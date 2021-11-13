@@ -25,6 +25,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print("home.dart");
     return AsymmetricView(products: ProductsRepository.loadProducts(category));
   }
 }
