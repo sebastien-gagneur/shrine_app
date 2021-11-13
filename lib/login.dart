@@ -79,7 +79,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 RaisedButton(
                   child: Text('Signin'),
-                  elevation: 8.0,
+                  elevation: 10.0,
                   shape: BeveledRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(7.0)),
                   ),
