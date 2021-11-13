@@ -72,6 +72,7 @@ class _LoginPageState extends State<LoginPage> {
                     borderRadius: BorderRadius.all(Radius.circular(7.0)),
                   ),
                   onPressed: () {
+                    print("cancel Pressed : login");
                     _usernameController.clear();
                     _passwordController.clear();
                   },
