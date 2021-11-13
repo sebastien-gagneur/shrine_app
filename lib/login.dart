@@ -83,6 +83,7 @@ class _LoginPageState extends State<LoginPage> {
                     borderRadius: BorderRadius.all(Radius.circular(7.0)),
                   ),
                   onPressed: () {
+                    print("hello");
                     Navigator.pop(context);
                   },
                 ),
@@ -96,8 +97,7 @@ class _LoginPageState extends State<LoginPage> {
 }
 
 class AccentColorOverride extends StatelessWidget {
-  const AccentColorOverride({Key key, this.color, this.child})
-      : super(key: key);
+  const AccentColorOverride({Key key, this.color, this.child}) : super(key: key);
 
   final Color color;
   final Widget child;
