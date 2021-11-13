@@ -45,7 +45,7 @@ class Product {
   final String name;
   final int price;
   final Coord location;
-  final int vendorId;
+  final int vendorId = 123456;
 
   String get assetName => '$id-0.jpg';
   String get assetPackage => 'shrine_images';
