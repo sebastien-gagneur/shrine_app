@@ -68,7 +68,7 @@ class _LoginPageState extends State<LoginPage> {
               children: <Widget>[
                 FlatButton(
                   child: Text('Reset'),
-                  color : kShrineErrorOrange,
+                  color: kShrineErrorOrange,
                   shape: BeveledRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(7.0)),
                   ),
@@ -81,7 +81,7 @@ class _LoginPageState extends State<LoginPage> {
                 RaisedButton(
                   child: Text('Signin'),
                   elevation: 8.0,
-                  color: kShrineErrorGreen
+                  color: kShrineErrorGreen,
                   shape: BeveledRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(7.0)),
                   ),
