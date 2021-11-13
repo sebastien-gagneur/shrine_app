@@ -28,7 +28,7 @@ class ProductCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String str;
-    str = product.name + "\n" + product.vendorId.toString();
+    str = product.name + "\n v-" + product.vendorId.toString();
 
     final NumberFormat formatter = NumberFormat.simpleCurrency(decimalDigits: 0, locale: Localizations.localeOf(context).toString());
     final ThemeData theme = Theme.of(context);
@@ -56,7 +56,7 @@ class ProductCard extends StatelessWidget {
             children: <Widget>[
               Text(
                 product == null ? '' : str,
-                style: theme.textTheme.headline6,
+                style: theme.textTheme.headline5,
                 softWrap: false,
                 overflow: TextOverflow.ellipsis,
                 maxLines: 2,
