@@ -66,7 +66,7 @@ class _LoginPageState extends State<LoginPage> {
             ),
             ButtonBar(
               children: <Widget>[
-                FlatButton(
+                RaisedButton(
                   child: Text('Reset'),
                   elevation: 8.0,
                   color: kShrineErrorOrange,
