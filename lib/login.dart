@@ -38,7 +38,7 @@ class _LoginPageState extends State<LoginPage> {
                 Image.asset('assets/diamond.png'),
                 SizedBox(height: 16.0),
                 Text(
-                  'SHRINE',
+                  'BRANDED',
                   style: Theme.of(context).textTheme.headline5,
                 ),
               ],
