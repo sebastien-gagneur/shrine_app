@@ -56,7 +56,7 @@ class ProductCard extends StatelessWidget {
             children: <Widget>[
               Text(
                 product == null ? '' : str,
-                style: theme.textTheme.headline8,
+                style: theme.textTheme.headline7,
                 softWrap: false,
                 overflow: TextOverflow.ellipsis,
                 maxLines: 2,
