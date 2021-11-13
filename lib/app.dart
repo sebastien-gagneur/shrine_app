@@ -54,7 +54,7 @@ class _ShrineAppState extends State<ShrineApp> {
   void _onCategoryTap(Category category) {
     setState(() {
       _currentCategory = category;
-      print("tap categfory");
+      print("category pressed : category");
     });
   }
 }
