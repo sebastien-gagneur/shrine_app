@@ -251,11 +251,11 @@ class _BackdropState extends State<Backdrop> with SingleTickerProviderStateMixin
       actions: <Widget>[
         new IconButton(
           icon: Icon(
-            Icons.arrow_back,
+            Icons.logout,
             semanticLabel: 'login',
           ),
           onPressed: () {
-            print("Search Pressed ! goto login");
+            print("logout ! goto login");
             Navigator.push(
               context,
               MaterialPageRoute(builder: (BuildContext context) => LoginPage()),
