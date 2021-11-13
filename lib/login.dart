@@ -78,13 +78,13 @@ class _LoginPageState extends State<LoginPage> {
                   },
                 ),
                 RaisedButton(
-                  child: Text('NEXT'),
+                  child: Text('Login'),
                   elevation: 8.0,
                   shape: BeveledRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(7.0)),
                   ),
                   onPressed: () {
-                    print("next Pressed : login");
+                    print("login Pressed : login");
                     Navigator.pop(context);
                   },
                 ),
