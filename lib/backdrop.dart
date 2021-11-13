@@ -75,7 +75,7 @@ class _BackdropTitle extends AnimatedWidget {
   @override
   Widget build(BuildContext context) {
     final Animation<double> animation = this.listenable;
-
+    print("a");
     return DefaultTextStyle(
       style: Theme.of(context).primaryTextTheme.headline6,
       softWrap: false,
@@ -252,7 +252,7 @@ class _BackdropState extends State<Backdrop> with SingleTickerProviderStateMixin
         new IconButton(
           icon: Icon(
             Icons.logout,
-            semanticLabel: 'login',
+            semanticLabel: 'logout',
           ),
           onPressed: () {
             print("logout ! goto login");
