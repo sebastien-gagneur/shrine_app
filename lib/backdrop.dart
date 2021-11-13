@@ -98,7 +98,8 @@ class _BackdropTitle extends AnimatedWidget {
                   end: Offset(1.0, 0.0),
                 ).evaluate(animation),
                 child: ImageIcon(AssetImage('assets/diamond.png')),
-              )]),
+              )
+            ]),
           ),
         ),
         // Here, we do a custom cross fade between backTitle and frontTitle.
@@ -115,10 +116,7 @@ class _BackdropTitle extends AnimatedWidget {
                   begin: Offset.zero,
                   end: Offset(0.5, 0.0),
                 ).evaluate(animation),
-                child: Semantics(
-                    label: 'hide categories menu',
-                    child: ExcludeSemantics(child: backTitle)
-                ),
+                child: Semantics(label: 'hide categories menu', child: ExcludeSemantics(child: backTitle)),
               ),
             ),
             Opacity(
@@ -131,10 +129,7 @@ class _BackdropTitle extends AnimatedWidget {
                   begin: Offset(-0.25, 0.0),
                   end: Offset.zero,
                 ).evaluate(animation),
-                child: Semantics(
-                    label: 'show categories menu',
-                    child: ExcludeSemantics(child: frontTitle)
-                ),
+                child: Semantics(label: 'show categories menu', child: ExcludeSemantics(child: frontTitle)),
               ),
             ),
           ],
@@ -173,8 +168,7 @@ class Backdrop extends StatefulWidget {
   _BackdropState createState() => _BackdropState();
 }
 
-class _BackdropState extends State<Backdrop>
-    with SingleTickerProviderStateMixin {
+class _BackdropState extends State<Backdrop> with SingleTickerProviderStateMixin {
   final GlobalKey _backdropKey = GlobalKey(debugLabel: 'Backdrop');
   AnimationController _controller;
 
@@ -207,13 +201,11 @@ class _BackdropState extends State<Backdrop>
 
   bool get _frontLayerVisible {
     final AnimationStatus status = _controller.status;
-    return status == AnimationStatus.completed ||
-        status == AnimationStatus.forward;
+    return status == AnimationStatus.completed || status == AnimationStatus.forward;
   }
 
   void _toggleBackdropLayerVisibility() {
-    _controller.fling(
-        velocity: _frontLayerVisible ? -_kFlingVelocity : _kFlingVelocity);
+    _controller.fling(velocity: _frontLayerVisible ? -_kFlingVelocity : _kFlingVelocity);
   }
 
   Widget _buildStack(BuildContext context, BoxConstraints constraints) {
@@ -222,8 +214,7 @@ class _BackdropState extends State<Backdrop>
     final double layerTop = layerSize.height - layerTitleHeight;
 
     Animation<RelativeRect> layerAnimation = RelativeRectTween(
-      begin: RelativeRect.fromLTRB(
-          0.0, layerTop, 0.0, layerTop - layerSize.height),
+      begin: RelativeRect.fromLTRB(0.0, layerTop, 0.0, layerTop - layerSize.height),
       end: RelativeRect.fromLTRB(0.0, 0.0, 0.0, 0.0),
     ).animate(_controller.view);
 
@@ -264,6 +255,7 @@ class _BackdropState extends State<Backdrop>
             semanticLabel: 'login',
           ),
           onPressed: () {
+            print("jgjgj");
             Navigator.push(
               context,
               MaterialPageRoute(builder: (BuildContext context) => LoginPage()),
