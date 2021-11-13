@@ -67,12 +67,12 @@ class _LoginPageState extends State<LoginPage> {
             ButtonBar(
               children: <Widget>[
                 FlatButton(
-                  child: Text('CANCEL'),
+                  child: Text('Reset'),
                   shape: BeveledRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(7.0)),
                   ),
                   onPressed: () {
-                    print("cancel Pressed : login");
+                    print("Reset Pressed : login");
                     _usernameController.clear();
                     _passwordController.clear();
                   },
