@@ -28,7 +28,7 @@ class ProductCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String str;
-    str = "ddd" + product.name + "\n" + product.location.toString() + "\n" + product.vendorId.toString();
+    str = product.name + "\n" + product.vendorId.toString();
 
     final NumberFormat formatter = NumberFormat.simpleCurrency(decimalDigits: 0, locale: Localizations.localeOf(context).toString());
     final ThemeData theme = Theme.of(context);
