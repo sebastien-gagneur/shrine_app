@@ -59,7 +59,7 @@ class ProductCard extends StatelessWidget {
                 style: theme.textTheme.headline6,
                 softWrap: true,
                 overflow: TextOverflow.ellipsis,
-                maxLines: 1,
+                maxLines: 3,
               ),
               SizedBox(height: 4.0),
               Text(
