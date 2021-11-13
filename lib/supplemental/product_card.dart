@@ -18,8 +18,7 @@ import 'package:intl/intl.dart';
 import '../model/product.dart';
 
 class ProductCard extends StatelessWidget {
-  ProductCard({this.imageAspectRatio: 33 / 49, this.product})
-      : assert(imageAspectRatio == null || imageAspectRatio > 0);
+  ProductCard({this.imageAspectRatio: 33 / 49, this.product}) : assert(imageAspectRatio == null || imageAspectRatio > 0);
 
   final double imageAspectRatio;
   final Product product;
@@ -28,8 +27,10 @@ class ProductCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final NumberFormat formatter = NumberFormat.simpleCurrency(
-        decimalDigits: 0, locale: Localizations.localeOf(context).toString());
+    String str;
+    str = product.name + "\n" + product.location.toString() + "\n" + product.vendorId.toString();
+
+    final NumberFormat formatter = NumberFormat.simpleCurrency(decimalDigits: 0, locale: Localizations.localeOf(context).toString());
     final ThemeData theme = Theme.of(context);
 
     final imageWidget = Image.asset(
@@ -54,7 +55,7 @@ class ProductCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Text(
-                product == null ? '' : product.name,
+                product == null ? '' : str,
                 style: theme.textTheme.headline6,
                 softWrap: false,
                 overflow: TextOverflow.ellipsis,
