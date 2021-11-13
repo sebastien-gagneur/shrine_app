@@ -268,7 +268,7 @@ class _BackdropState extends State<Backdrop> with SingleTickerProviderStateMixin
             semanticLabel: 'tune',
           ),
           onPressed: () {
-            print("setup:tune préférence");
+            print("setup:tune preference");
             Navigator.push(
               context,
               MaterialPageRoute(builder: (BuildContext context) => LoginPage()),
