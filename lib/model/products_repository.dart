@@ -29,7 +29,7 @@ class ProductsRepository {
         name: 'Vagabond sack',
         price: 120,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.accessories,
@@ -38,7 +38,7 @@ class ProductsRepository {
         name: 'Stella sunglasses',
         price: 58,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.accessories,
@@ -47,7 +47,7 @@ class ProductsRepository {
         name: 'Whitney belt',
         price: 35,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.accessories,
@@ -56,7 +56,7 @@ class ProductsRepository {
         name: 'Garden strand',
         price: 98,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.accessories,
@@ -65,7 +65,7 @@ class ProductsRepository {
         name: 'Strut earrings',
         price: 34,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.accessories,
@@ -74,7 +74,7 @@ class ProductsRepository {
         name: 'Varsity socks',
         price: 12,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.accessories,
@@ -83,7 +83,7 @@ class ProductsRepository {
         name: 'Weave keyring',
         price: 16,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.accessories,
@@ -92,7 +92,7 @@ class ProductsRepository {
         name: 'Gatsby hat',
         price: 40,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.accessories,
@@ -101,7 +101,7 @@ class ProductsRepository {
         name: 'Shrug bag',
         price: 198,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.home,
@@ -110,7 +110,7 @@ class ProductsRepository {
         name: 'Gilt desk trio',
         price: 58,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.home,
@@ -119,7 +119,7 @@ class ProductsRepository {
         name: 'Copper wire rack',
         price: 18,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.home,
@@ -128,7 +128,7 @@ class ProductsRepository {
         name: 'Soothe ceramic set',
         price: 28,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.home,
@@ -137,7 +137,7 @@ class ProductsRepository {
         name: 'Hurrahs tea set',
         price: 34,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.home,
@@ -146,7 +146,7 @@ class ProductsRepository {
         name: 'Blue stone mug',
         price: 18,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.home,
@@ -155,7 +155,7 @@ class ProductsRepository {
         name: 'Rainwater tray',
         price: 27,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.home,
@@ -164,7 +164,7 @@ class ProductsRepository {
         name: 'Chambray napkins',
         price: 16,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.home,
@@ -173,7 +173,7 @@ class ProductsRepository {
         name: 'Succulent planters',
         price: 16,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.home,
@@ -182,7 +182,7 @@ class ProductsRepository {
         name: 'Quartet table',
         price: 175,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.home,
@@ -191,7 +191,7 @@ class ProductsRepository {
         name: 'Kitchen quattro',
         price: 129,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.clothing,
@@ -200,7 +200,7 @@ class ProductsRepository {
         name: 'Clay sweater',
         price: 48,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.clothing,
@@ -209,7 +209,7 @@ class ProductsRepository {
         name: 'Sea tunic',
         price: 45,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.clothing,
@@ -218,7 +218,7 @@ class ProductsRepository {
         name: 'Plaster tunic',
         price: 38,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.clothing,
@@ -227,7 +227,7 @@ class ProductsRepository {
         name: 'White pinstripe shirt',
         price: 70,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.clothing,
@@ -236,7 +236,7 @@ class ProductsRepository {
         name: 'Chambray shirt',
         price: 70,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.clothing,
@@ -245,7 +245,7 @@ class ProductsRepository {
         name: 'Seabreeze sweater',
         price: 60,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.clothing,
@@ -254,7 +254,7 @@ class ProductsRepository {
         name: 'Gentry jacket',
         price: 178,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.clothing,
@@ -263,7 +263,7 @@ class ProductsRepository {
         name: 'Navy trousers',
         price: 74,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.clothing,
@@ -272,7 +272,7 @@ class ProductsRepository {
         name: 'Walter henley (white)',
         price: 38,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.clothing,
@@ -281,7 +281,7 @@ class ProductsRepository {
         name: 'Surf and perf shirt',
         price: 48,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.clothing,
@@ -290,7 +290,7 @@ class ProductsRepository {
         name: 'Ginger scarf',
         price: 98,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.clothing,
@@ -299,7 +299,7 @@ class ProductsRepository {
         name: 'Ramona crossover',
         price: 68,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.clothing,
@@ -308,7 +308,7 @@ class ProductsRepository {
         name: 'Chambray shirt',
         price: 38,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.clothing,
@@ -317,7 +317,7 @@ class ProductsRepository {
         name: 'Classic white collar',
         price: 58,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.clothing,
@@ -326,7 +326,7 @@ class ProductsRepository {
         name: 'Cerise scallop tee',
         price: 42,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.clothing,
@@ -335,7 +335,7 @@ class ProductsRepository {
         name: 'Shoulder rolls tee',
         price: 27,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.clothing,
@@ -344,7 +344,7 @@ class ProductsRepository {
         name: 'Grey slouch tank',
         price: 24,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.clothing,
@@ -353,7 +353,7 @@ class ProductsRepository {
         name: 'Sunshirt dress',
         price: 58,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
       Product(
         category: Category.clothing,
@@ -362,7 +362,7 @@ class ProductsRepository {
         name: 'Fine lines tee',
         price: 58,
         location: Coord(),
-        vendorId: 0,
+        vendorId: 123456,
       ),
     ];
     if (category == Category.all) {
