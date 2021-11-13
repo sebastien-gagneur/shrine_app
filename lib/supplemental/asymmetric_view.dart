@@ -41,11 +41,7 @@ class AsymmetricView extends StatelessWidget {
       if (index % 2 == 0) {
         /// Even cases
         int bottom = _evenCasesIndex(index);
-        column = TwoProductCardColumn(
-            bottom: products[bottom],
-            top: products.length - 1 >= bottom + 1
-                ? products[bottom + 1]
-                : null);
+        column = TwoProductCardColumn(bottom: products[bottom], top: products.length - 1 >= bottom + 1 ? products[bottom + 1] : null);
         width += 32.0;
       } else {
         /// Odd cases
@@ -87,7 +83,7 @@ class AsymmetricView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      scrollDirection: Axis.horizontal,
+      scrollDirection: Axis.vertical,
       padding: EdgeInsets.fromLTRB(0.0, 34.0, 16.0, 44.0),
       children: _buildColumns(context),
     );
