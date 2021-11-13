@@ -268,8 +268,8 @@ class _BackdropState extends State<Backdrop> with SingleTickerProviderStateMixin
             semanticLabel: 'login',
           ),
           onPressed: () {
+            print("setup");
             Navigator.push(
-              print("setup");
               context,
               MaterialPageRoute(builder: (BuildContext context) => LoginPage()),
             );
