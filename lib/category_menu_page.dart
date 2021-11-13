@@ -34,7 +34,6 @@ class CategoryMenuPage extends StatelessWidget {
     final categoryString = category.toString().replaceAll('Category.', '').toUpperCase();
     final ThemeData theme = Theme.of(context);
     return GestureDetector(
-      print("tap category : caterogy"),
       onTap: () => onCategoryTap(category),
       child: category == currentCategory
           ? Column(
