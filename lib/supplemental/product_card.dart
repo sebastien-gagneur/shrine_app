@@ -57,7 +57,7 @@ class ProductCard extends StatelessWidget {
               Text(
                 product == null ? '' : str,
                 style: theme.textTheme.headline6,
-                softWrap: false,
+                softWrap: true,
                 overflow: TextOverflow.ellipsis,
                 maxLines: 1,
               ),
