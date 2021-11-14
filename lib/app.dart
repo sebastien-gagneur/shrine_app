@@ -61,10 +61,11 @@ class _ShrineAppState extends State<ShrineApp> {
 }
 
 Route<dynamic> _getRoute(RouteSettings settings) {
+  print(settings.name);
   if (settings.name != '/login') {
     return null;
   }
-
+  // Set the starting page ConfirmPage/LoginPage
   return MaterialPageRoute<void>(
     settings: settings,
     builder: (BuildContext context) => ConfirmPage(),
