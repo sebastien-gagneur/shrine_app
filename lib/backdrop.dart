@@ -17,6 +17,7 @@ import 'package:meta/meta.dart';
 
 import 'model/product.dart';
 import 'login.dart';
+import 'confirm.dart';
 
 const double _kFlingVelocity = 2.0;
 
