@@ -87,7 +87,10 @@ class _ConfirmPageState extends State<ConfirmPage> {
                   ),
                   onPressed: () {
                     print("confirm Pressed : confirm");
-                    Navigator.pop(context);
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (BuildContext context) => LoginPage()),
+                    );
                   },
                 ),
               ],
