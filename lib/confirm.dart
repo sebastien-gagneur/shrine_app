@@ -16,6 +16,7 @@ import 'package:flutter/material.dart';
 
 import 'colors.dart';
 import 'login.dart';
+import 'backdrop.dart';
 
 class ConfirmPage extends StatefulWidget {
   @override
@@ -90,7 +91,7 @@ class _ConfirmPageState extends State<ConfirmPage> {
                     print("confirm Pressed : confirm");
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (BuildContext context) => LoginPage()),
+                      MaterialPageRoute(builder: (BuildContext context) => Backdrop()),
                     );
                   },
                 ),
