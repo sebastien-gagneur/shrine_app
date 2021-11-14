@@ -60,7 +60,7 @@ class _ShrineAppState extends State<ShrineApp> {
 }
 
 Route<dynamic> _getRoute(RouteSettings settings) {
-  print(settings.name);
+  print("route dynamic :" + settings.name);
   if (settings.name != '/login') {
     return null;
   }
