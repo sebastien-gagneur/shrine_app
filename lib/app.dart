@@ -17,7 +17,6 @@ import 'package:flutter/material.dart';
 import 'backdrop.dart';
 import 'colors.dart';
 import 'home.dart';
-import 'login.dart';
 import 'confirm.dart';
 import 'category_menu_page.dart';
 import 'model/product.dart';
@@ -68,7 +67,7 @@ Route<dynamic> _getRoute(RouteSettings settings) {
   // Set the starting page ConfirmPage/LoginPage
   return MaterialPageRoute<void>(
     settings: settings,
-    builder: (BuildContext context) => ConfirmPage(),
+    builder: (BuildContext context) => LoginPage(),
     fullscreenDialog: true,
   );
 }
