@@ -17,6 +17,10 @@ import 'package:flutter/material.dart';
 import 'colors.dart';
 import 'login.dart';
 import 'backdrop.dart';
+import 'home.dart';
+import 'category_menu_page.dart';
+import 'model/product.dart';
+import 'app.dart';
 
 class ConfirmPage extends StatefulWidget {
   @override
@@ -26,6 +30,7 @@ class ConfirmPage extends StatefulWidget {
 class _ConfirmPageState extends State<ConfirmPage> {
   final _phoneNumberController = TextEditingController();
   final _pinController = TextEditingController();
+  Category _currentCategory = Category.all;
 
   @override
   Widget build(BuildContext context) {
@@ -89,9 +94,20 @@ class _ConfirmPageState extends State<ConfirmPage> {
                   ),
                   onPressed: () {
                     print("confirm Pressed : confirm");
+
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (BuildContext context) => Backdrop()),
+                      MaterialPageRoute(
+                          builder: (BuildContext context) => Backdrop(
+                                currentCategory: _currentCategory,
+                                frontLayer: HomePage(category: _currentCategory),
+                                backLayer: CategoryMenuPage(
+                                  currentCategory: _currentCategory,
+                                  onCategoryTap: _onCategoryTap,
+                                ),
+                                frontTitle: Text('BRANDED'),
+                                backTitle: Text('FILTERS'),
+                              )),
                     );
                   },
                 ),
@@ -101,6 +117,14 @@ class _ConfirmPageState extends State<ConfirmPage> {
         ),
       ),
     );
+  }
+
+  /// Function to call when a [Category] is tapped.
+  void _onCategoryTap(Category category) {
+    setState(() {
+      _currentCategory = category;
+      print("category pressed : category");
+    });
   }
 }
 
