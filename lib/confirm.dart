@@ -98,6 +98,7 @@ class _ConfirmPageState extends State<ConfirmPage> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
+                          // passage a la page des produits MAIS AJOUT DE LA FLECHE BACK ...
                           builder: (BuildContext context) => Backdrop(
                                 currentCategory: _currentCategory,
                                 frontLayer: HomePage(category: _currentCategory),
