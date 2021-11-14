@@ -99,6 +99,10 @@ class _ConfirmPageState extends State<ConfirmPage> {
                       context,
                       MaterialPageRoute(
                           // passage a la page des produits MAIS AJOUT DE LA FLECHE BACK ...
+                          // Il faut beaucoup de paramètres pour appeler la page backdrop ...
+                          //pour gerer le backdrop justement. La page appelé est ici backdrop
+                          // Cette classe qui désigne la page produit est présente dans le fichier
+                          // backdrop.dart
                           builder: (BuildContext context) => Backdrop(
                                 currentCategory: _currentCategory,
                                 frontLayer: HomePage(category: _currentCategory),
@@ -120,6 +124,9 @@ class _ConfirmPageState extends State<ConfirmPage> {
     );
   }
 
+  // IL A FALLU AJOUTER CETTE FONCTION SUR LES CATEGORIES POUR APPELER LA PAGE BACKDROP
+  // suite à l'appui du bouton confirm de la page confirm.
+  // la page back à besoin de connaître les catégories choisies actives.
   /// Function to call when a [Category] is tapped.
   void _onCategoryTap(Category category) {
     setState(() {

@@ -146,7 +146,11 @@ class _BackdropTitle extends AnimatedWidget {
 /// by default, and slides down to show the back layer, from which a user
 /// can make a selection. The user can also configure the titles for when the
 /// front or back layer is showing.
+
+// ANNONCE DE LA CLASSE BACK DROP avec le CreateState plus bas pour en faire une page comme
+// confirm ou login sur le même modèle
 class Backdrop extends StatefulWidget {
+  // la page back drop à besoin de tout ses paramètres : propriétés
   final Category currentCategory;
   final Widget frontLayer;
   final Widget backLayer;
@@ -169,6 +173,9 @@ class Backdrop extends StatefulWidget {
   _BackdropState createState() => _BackdropState();
 }
 
+// Extend attendu pour pour pouvoir invoquer la page backdrop avec des paramètres
+// nécessaires inclut plus haut : les propriétés
+// Ouf un mixin à déjà permis un héritage multiple avec with sinon il aurait fallu le faire.
 class _BackdropState extends State<Backdrop> with SingleTickerProviderStateMixin {
   final GlobalKey _backdropKey = GlobalKey(debugLabel: 'Backdrop');
   AnimationController _controller;
