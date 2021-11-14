@@ -272,7 +272,7 @@ class _BackdropState extends State<Backdrop> with SingleTickerProviderStateMixin
             print("setup:tune preference");
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (BuildContext context) => ConfirmPage()),
+              MaterialPageRoute(builder: (BuildContext context) => LoginPage()),
             );
           },
         ),
