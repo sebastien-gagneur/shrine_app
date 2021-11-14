@@ -67,7 +67,7 @@ Route<dynamic> _getRoute(RouteSettings settings) {
 
   return MaterialPageRoute<void>(
     settings: settings,
-    builder: (BuildContext context) => LoginPage(),
+    builder: (BuildContext context) => ConfirmPage(),
     fullscreenDialog: true,
   );
 }
