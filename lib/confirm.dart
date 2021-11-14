@@ -75,6 +75,7 @@ class _ConfirmPageState extends State<ConfirmPage> {
                   onPressed: () {
                     print("Reset Pressed : confirm");
                     _phoneNumberController.clear();
+                    _pinController.clear();
                   },
                 ),
                 RaisedButton(
