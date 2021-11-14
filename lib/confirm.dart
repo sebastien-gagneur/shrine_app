@@ -23,6 +23,7 @@ class ConfirmPage extends StatefulWidget {
 
 class _ConfirmPageState extends State<ConfirmPage> {
   final _phoneNumberController = TextEditingController();
+  final _pinController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -49,6 +50,16 @@ class _ConfirmPageState extends State<ConfirmPage> {
                 controller: _phoneNumberController,
                 decoration: InputDecoration(
                   labelText: 'Phone number',
+                ),
+              ),
+            ),
+            SizedBox(height: 120.0),
+            AccentColorOverride(
+              color: kShrineBrown900,
+              child: TextField(
+                controller: _pinController,
+                decoration: InputDecoration(
+                  labelText: 'Pin number',
                 ),
               ),
             ),
