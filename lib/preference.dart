@@ -66,6 +66,17 @@ class _PreferencePageState extends State<PreferencePage> {
             AccentColorOverride(
               color: kShrineBrown900,
               child: TextField(
+                controller: _passwordController,
+                decoration: InputDecoration(
+                  labelText: 'password',
+                ),
+                obscureText: true,
+              ),
+            ),
+            SizedBox(height: 120.0),
+            AccentColorOverride(
+              color: kShrineBrown900,
+              child: TextField(
                 controller: _phoneNumberController,
                 decoration: InputDecoration(
                   labelText: 'phoneNumber',
