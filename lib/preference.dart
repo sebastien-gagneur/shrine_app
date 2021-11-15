@@ -52,7 +52,7 @@ class _PreferencePageState extends State<PreferencePage> {
                 ),
               ],
             ),
-            SizedBox(height: 120.0),
+            SizedBox(height: 60.0),
             AccentColorOverride(
               color: kShrineBrown900,
               child: TextField(
