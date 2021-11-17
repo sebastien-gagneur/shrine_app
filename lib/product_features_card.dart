@@ -29,6 +29,10 @@ class ProductFeaturesCardPage extends StatefulWidget {
     this._Price = price;
   }
 
+ @override
+  _ProductFeaturesCardPageState createState() => _ProductFeaturesCardPageState();
+}
+
 mixin test extends ProductFeaturesCardPage
 {
   String getPrice() {
@@ -36,9 +40,7 @@ mixin test extends ProductFeaturesCardPage
   }
 }
 
-  @override
-  _ProductFeaturesCardPageState createState() => _ProductFeaturesCardPageState();
-}
+
 
 class _ProductFeaturesCardPageState extends State<ProductFeaturesCardPage> with test {
   
