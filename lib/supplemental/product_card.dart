@@ -69,7 +69,7 @@ class ProductCard extends StatelessWidget {
                   print("click");
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (BuildContext context) => ProductFeaturesCardPage(product.price)),
+                    MaterialPageRoute(builder: (BuildContext context) => ProductFeaturesCardPage(produit.name, product.price)),
                   );
                 },
               ),
@@ -83,7 +83,7 @@ class ProductCard extends StatelessWidget {
               //),
               SizedBox(height: 4.0),
               Text(
-                product == null ? '' : formatter.format(produit.name, product.price),
+                product == null ? '' : formatter.format(product.price),
                 style: theme.textTheme.subtitle2,
               ),
             ],
