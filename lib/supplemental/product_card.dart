@@ -68,7 +68,7 @@ class ProductCard extends StatelessWidget {
                   print("click");
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (BuildContext context) => LoginPage()),
+                    MaterialPageRoute(builder: (BuildContext context) => ProductFeaturesCardPage()),
                   );
                 },
               ),

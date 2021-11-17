@@ -28,15 +28,14 @@ class ProductFeaturesCardPage extends StatefulWidget {
 }
 
 class _ProductFeaturesCardPageState extends State<ConfirmPage> {
-  final _id = TextEditingController();
-  final _pinController = TextEditingController();
-  final _category;
+  
+  final _category = = TextEditingController();
   final _id = TextEditingController();;
   final _isFeatured = TextEditingController();;
   final _name = TextEditingController();;
   final _price = TextEditingController();;
-  final _location ;
-  final _vendorId;
+  final _location = TextEditingController();;
+  final _vendorId = TextEditingController();;
 
   Category _currentCategory = Category.all;
 
@@ -64,7 +63,7 @@ class _ProductFeaturesCardPageState extends State<ConfirmPage> {
               child: TextField(
                 controller: _phoneNumberController,
                 decoration: InputDecoration(
-                  labelText: 'Phone number',
+                  labelText: 'category',
                 ),
               ),
             ),
