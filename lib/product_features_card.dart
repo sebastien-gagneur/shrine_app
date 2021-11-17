@@ -27,7 +27,7 @@ class ProductFeaturesCardPage extends StatefulWidget {
   _ProductFeaturesCardPageState createState() => _ProductFeaturesCardPageState();
 }
 
-class _ProductFeaturesCardPageState extends State<ConfirmPage> {
+class _ProductFeaturesCardPageState extends State<ProductFeaturesCardPage> {
   final _category = TextEditingController();
   final _id = TextEditingController();
   final _isFeatured = TextEditingController();
