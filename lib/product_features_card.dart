@@ -121,7 +121,7 @@ class _ProductFeaturesCardPageState extends State<ConfirmPage> {
             AccentColorOverride(
               color: kShrineBrown900,
               child: TextField(
-                controller: _idVendor,
+                controller: _vendorId,
                 decoration: InputDecoration(
                   labelText: 'idVendor',
                 ),
