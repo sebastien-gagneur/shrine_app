@@ -76,7 +76,7 @@ class ProductCard extends StatelessWidget {
               GestureDetector(
                 //child: new Text("Gesture"),
                 onTap: () {
-                  print("ejfkejk)");
+                  print("1");
                 },
               ),
             ],
