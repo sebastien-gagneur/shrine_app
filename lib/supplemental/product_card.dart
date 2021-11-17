@@ -61,6 +61,12 @@ class ProductCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.end,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
+              new InkWell(
+                child: Text(str),
+                onTap: () {
+                  print("click");
+                },
+              ),
               //Text(
               //product == null ? '' : str,
               //style: theme.textTheme.headline6,
@@ -73,12 +79,6 @@ class ProductCard extends StatelessWidget {
                 product == null ? '' : formatter.format(product.price),
                 style: theme.textTheme.subtitle2,
               ),
-              new InkWell(
-                child: Text("Hello"),
-                onTap: () {
-                  print(str);
-                },
-              )
             ],
           ),
         ),
