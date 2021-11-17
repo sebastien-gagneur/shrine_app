@@ -28,6 +28,11 @@ class ProductFeaturesCardPage extends StatefulWidget {
   ProductFeaturesCardPage(int price) {
     this._Price = price;
   }
+
+  String getPrice() {
+    return this._Price;
+  }
+
   @override
   _ProductFeaturesCardPageState createState() => _ProductFeaturesCardPageState();
 }
@@ -37,7 +42,7 @@ class _ProductFeaturesCardPageState extends State<ProductFeaturesCardPage> {
   final _id = TextEditingController();
   final _isFeatured = TextEditingController();
   final _name = TextEditingController();
-  final _price = TextEditingController()..Text = _Price;
+  final _price = TextEditingController()..Text = getPrice();
   final _location = TextEditingController();
   final _vendorId = TextEditingController();
 
