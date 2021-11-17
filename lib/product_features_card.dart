@@ -33,12 +33,12 @@ class ProductFeaturesCardPage extends StatefulWidget {
   _ProductFeaturesCardPageState createState() => _ProductFeaturesCardPageState();
 }
 
-class _ProductFeaturesCardPageState extends State<ProductFeaturesCardPage> with test {
+class _ProductFeaturesCardPageState extends State<ProductFeaturesCardPage> {
   final _category = TextEditingController();
   final _id = TextEditingController();
   final _isFeatured = TextEditingController();
   final _name = TextEditingController();
-  final _price = TextEditingController()..text = getPrice();
+  final _price = TextEditingController()..text = _Price;
   final _location = TextEditingController();
   final _vendorId = TextEditingController();
 
