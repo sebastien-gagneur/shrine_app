@@ -23,7 +23,7 @@ import 'model/product.dart';
 import 'app.dart';
 
 class ProductFeaturesCardPage extends StatefulWidget {
-  const ProductFeaturesCardPage(this.price});
+  const ProductFeaturesCardPage(this.price);
 
   // Declare a field that holds the Todo.
   final int price;
