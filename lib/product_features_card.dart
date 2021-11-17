@@ -41,7 +41,7 @@ class _ProductFeaturesCardPageState extends State<ProductFeaturesCardPage> {
   final _id = TextEditingController();
   final _isFeatured = TextEditingController();
   final _name = TextEditingController();
-  final _price = TextEditingController()..text = prix;
+  final _price = TextEditingController()..text = prix.toString();
   final _location = TextEditingController();
   final _vendorId = TextEditingController();
 
