@@ -138,8 +138,8 @@ class _ProductFeaturesCardPageState extends State<ConfirmPage> {
                   ),
                   onPressed: () {
                     print("Reset Pressed : confirm");
-                    _phoneNumberController.clear();
-                    _pinController.clear();
+                    _id.clear();
+                    _price.clear();
                   },
                 ),
                 RaisedButton(
