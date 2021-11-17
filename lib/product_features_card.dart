@@ -29,10 +29,10 @@ class ProductFeaturesCardPage extends StatefulWidget {
     this._Price = price;
   }
 
-  String getPrice()
-  {
+  String getPrice() {
     return _price.toString();
   }
+
   @override
   _ProductFeaturesCardPageState createState() => _ProductFeaturesCardPageState();
 }
@@ -42,13 +42,13 @@ class _ProductFeaturesCardPageState extends State<ProductFeaturesCardPage> {
   final _id = TextEditingController();
   final _isFeatured = TextEditingController();
   final _name = TextEditingController();
-  final _price = TextEditingController();
+  final _price = TextEditingController()..Text = getPrice();
   final _location = TextEditingController();
   final _vendorId = TextEditingController();
 
   Category _currentCategory = Category.all;
 
-  _price.Text = getPrice();
+  //_price.Text = getPrice();
 
   @override
   Widget build(BuildContext context) {
