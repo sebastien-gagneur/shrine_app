@@ -61,6 +61,7 @@ class ProductCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.end,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
+              // pour rendre le texte du produit clickable et aller sur la fiche produit.
               new InkWell(
                 child: Text(str),
                 onTap: () {
@@ -71,6 +72,7 @@ class ProductCard extends StatelessWidget {
                   );
                 },
               ),
+              // les textes par défaut ne prennent pas les clics. Impossible d'ajouter un évéènement sur un text en natif
               //Text(
               //product == null ? '' : str,
               //style: theme.textTheme.headline6,
