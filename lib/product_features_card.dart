@@ -26,7 +26,7 @@ class ProductFeaturesCardPage extends StatefulWidget {
   const ProductFeaturesCardPage({Key? key, required this.price}) : super(key: key);
 
   // Declare a field that holds the Todo.
-  final Todo todo;
+  final int price;
   @override
   _ProductFeaturesCardPageState createState() => _ProductFeaturesCardPageState();
 }
