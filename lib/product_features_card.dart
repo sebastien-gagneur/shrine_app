@@ -28,6 +28,11 @@ class ProductFeaturesCardPage extends StatefulWidget {
   ProductFeaturesCardPage(int price) {
     this._Price = price;
   }
+
+  String getPrice()
+  {
+    return _price.toString();
+  }
   @override
   _ProductFeaturesCardPageState createState() => _ProductFeaturesCardPageState();
 }
@@ -43,8 +48,8 @@ class _ProductFeaturesCardPageState extends State<ProductFeaturesCardPage> {
 
   Category _currentCategory = Category.all;
 
-  _price.Text = _Price.toString();
-  
+  _price.Text = getPrice();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
