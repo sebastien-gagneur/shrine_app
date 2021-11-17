@@ -61,13 +61,13 @@ class ProductCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.end,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              Text(
-                  //product == null ? '' : str,
-                  //style: theme.textTheme.headline6,
-                  //softWrap: false,
-                  //overflow: TextOverflow.ellipsis,
-                  //maxLines: 2,
-                  ),
+              //Text(
+              //product == null ? '' : str,
+              //style: theme.textTheme.headline6,
+              //softWrap: false,
+              //overflow: TextOverflow.ellipsis,
+              //maxLines: 2,
+              //),
               SizedBox(height: 4.0),
               Text(
                 product == null ? '' : formatter.format(product.price),
