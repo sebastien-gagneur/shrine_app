@@ -28,11 +28,6 @@ class ProductFeaturesCardPage extends StatefulWidget {
   ProductFeaturesCardPage(int price) {
     this._Price = price;
   }
-
-  String getPrice() {
-    return _price.toString();
-  }
-
   @override
   _ProductFeaturesCardPageState createState() => _ProductFeaturesCardPageState();
 }
