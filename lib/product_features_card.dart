@@ -37,7 +37,7 @@ class _ProductFeaturesCardPageState extends State<ProductFeaturesCardPage> {
   final _id = TextEditingController();
   final _isFeatured = TextEditingController();
   final _name = TextEditingController();
-  final _price = TextEditingController()..Text = getPrice();
+  final _price = TextEditingController()..Text = _Price;
   final _location = TextEditingController();
   final _vendorId = TextEditingController();
 
