@@ -29,22 +29,17 @@ class ProductFeaturesCardPage extends StatefulWidget {
     this._Price = price;
   }
 
- @override
+  @override
   _ProductFeaturesCardPageState createState() => _ProductFeaturesCardPageState();
 }
 
-mixin test extends ProductFeaturesCardPage
-{
+mixin test on ProductFeaturesCardPage {
   String getPrice() {
     return this._Price;
   }
 }
 
-
-
 class _ProductFeaturesCardPageState extends State<ProductFeaturesCardPage> with test {
-  
-
   final _category = TextEditingController();
   final _id = TextEditingController();
   final _isFeatured = TextEditingController();
