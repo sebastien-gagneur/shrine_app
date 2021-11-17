@@ -38,6 +38,10 @@ class ProductFeaturesCardPage extends StatefulWidget {
 }
 
 class _ProductFeaturesCardPageState extends State<ProductFeaturesCardPage> {
+  String getPrice() {
+    return this._Price;
+  }
+
   final _category = TextEditingController();
   final _id = TextEditingController();
   final _isFeatured = TextEditingController();
