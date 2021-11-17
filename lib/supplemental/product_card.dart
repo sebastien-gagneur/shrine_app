@@ -62,12 +62,12 @@ class ProductCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Text(
-                product == null ? '' : str,
-                style: theme.textTheme.headline6,
-                softWrap: false,
-                overflow: TextOverflow.ellipsis,
-                maxLines: 2,
-              ),
+                  //product == null ? '' : str,
+                  //style: theme.textTheme.headline6,
+                  //softWrap: false,
+                  //overflow: TextOverflow.ellipsis,
+                  //maxLines: 2,
+                  ),
               SizedBox(height: 4.0),
               Text(
                 product == null ? '' : formatter.format(product.price),
@@ -76,7 +76,7 @@ class ProductCard extends StatelessWidget {
               new InkWell(
                 child: Text("Hello"),
                 onTap: () {
-                  print("value of your text");
+                  print(str);
                 },
               )
             ],
