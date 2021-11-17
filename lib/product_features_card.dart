@@ -22,11 +22,14 @@ import 'category_menu_page.dart';
 import 'model/product.dart';
 import 'app.dart';
 
+int prix;
+
 class ProductFeaturesCardPage extends StatefulWidget {
   int _Price;
 
   ProductFeaturesCardPage(int price) {
     this._Price = price;
+    prix = price;
   }
 
   @override
@@ -38,7 +41,7 @@ class _ProductFeaturesCardPageState extends State<ProductFeaturesCardPage> {
   final _id = TextEditingController();
   final _isFeatured = TextEditingController();
   final _name = TextEditingController();
-  final _price = TextEditingController()..text = _Price;
+  final _price = TextEditingController()..text = prix;
   final _location = TextEditingController();
   final _vendorId = TextEditingController();
 
