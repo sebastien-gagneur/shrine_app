@@ -63,6 +63,7 @@ class ProductCard extends StatelessWidget {
             children: <Widget>[
               Text(
                 product == null ? '' : str,
+                tapableText(str, () {}),
                 style: theme.textTheme.headline6,
                 softWrap: false,
                 overflow: TextOverflow.ellipsis,
