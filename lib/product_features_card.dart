@@ -22,6 +22,8 @@ import 'category_menu_page.dart';
 import 'model/product.dart';
 import 'app.dart';
 
+// Pas très catholique, mais pour éviter les getter qui pose problème je mets des variables globales qui collectent la valeur à l'intérieur du constructeur de la classe
+
 int prix;
 
 class ProductFeaturesCardPage extends StatefulWidget {
@@ -29,6 +31,7 @@ class ProductFeaturesCardPage extends StatefulWidget {
 
   ProductFeaturesCardPage(int price) {
     this._Price = price;
+    // ça évite le getter et j'ai la varialb en globale pour l'utiliser dans la classe suivante
     prix = price;
   }
 
@@ -67,7 +70,7 @@ class _ProductFeaturesCardPageState extends State<ProductFeaturesCardPage> {
                 ),
               ],
             ),
-            SizedBox(height: 120.0),
+            SizedBox(height: 6.0),
             AccentColorOverride(
               color: kShrineBrown900,
               child: TextField(
@@ -77,7 +80,7 @@ class _ProductFeaturesCardPageState extends State<ProductFeaturesCardPage> {
                 ),
               ),
             ),
-            SizedBox(height: 120.0),
+            SizedBox(height: 6.0),
             AccentColorOverride(
               color: kShrineBrown900,
               child: TextField(
@@ -87,7 +90,7 @@ class _ProductFeaturesCardPageState extends State<ProductFeaturesCardPage> {
                 ),
               ),
             ),
-            SizedBox(height: 120.0),
+            SizedBox(height: 6.0),
             AccentColorOverride(
               color: kShrineBrown900,
               child: TextField(
@@ -97,7 +100,7 @@ class _ProductFeaturesCardPageState extends State<ProductFeaturesCardPage> {
                 ),
               ),
             ),
-            SizedBox(height: 120.0),
+            SizedBox(height: 6.0),
             AccentColorOverride(
               color: kShrineBrown900,
               child: TextField(
@@ -107,7 +110,7 @@ class _ProductFeaturesCardPageState extends State<ProductFeaturesCardPage> {
                 ),
               ),
             ),
-            SizedBox(height: 120.0),
+            SizedBox(height: 6),
             AccentColorOverride(
               color: kShrineBrown900,
               child: TextField(
@@ -117,7 +120,7 @@ class _ProductFeaturesCardPageState extends State<ProductFeaturesCardPage> {
                 ),
               ),
             ),
-            SizedBox(height: 120.0),
+            SizedBox(height: 6),
             AccentColorOverride(
               color: kShrineBrown900,
               child: TextField(
@@ -127,7 +130,7 @@ class _ProductFeaturesCardPageState extends State<ProductFeaturesCardPage> {
                 ),
               ),
             ),
-            SizedBox(height: 120.0),
+            SizedBox(height: 6),
             AccentColorOverride(
               color: kShrineBrown900,
               child: TextField(
