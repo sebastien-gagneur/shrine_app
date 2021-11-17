@@ -33,18 +33,12 @@ class ProductFeaturesCardPage extends StatefulWidget {
   _ProductFeaturesCardPageState createState() => _ProductFeaturesCardPageState();
 }
 
-mixin test on ProductFeaturesCardPage {
-  String getPrice() {
-    return this._Price;
-  }
-}
-
 class _ProductFeaturesCardPageState extends State<ProductFeaturesCardPage> with test {
   final _category = TextEditingController();
   final _id = TextEditingController();
   final _isFeatured = TextEditingController();
   final _name = TextEditingController();
-  final _price = TextEditingController()..Text = getPrice();
+  final _price = TextEditingController()..text = getPrice();
   final _location = TextEditingController();
   final _vendorId = TextEditingController();
 
