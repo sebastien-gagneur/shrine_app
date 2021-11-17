@@ -23,6 +23,10 @@ import 'model/product.dart';
 import 'app.dart';
 
 class ProductFeaturesCardPage extends StatefulWidget {
+  const ProductFeaturesCardPage({Key? key, required this.price}) : super(key: key);
+
+  // Declare a field that holds the Todo.
+  final Todo todo;
   @override
   _ProductFeaturesCardPageState createState() => _ProductFeaturesCardPageState();
 }
