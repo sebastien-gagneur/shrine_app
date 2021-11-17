@@ -23,8 +23,7 @@ import 'model/product.dart';
 import 'app.dart';
 
 class ProductFeaturesCardPage extends StatefulWidget {
-  const ProductFeaturesCardPage(_price)
-  {
+  ProductFeaturesCardPage(int price) {
     this.price = price;
   }
 
