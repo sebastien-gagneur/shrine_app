@@ -23,16 +23,20 @@ import 'model/product.dart';
 import 'app.dart';
 
 // Pas très catholique, mais pour éviter les getter qui pose problème je mets des variables globales qui collectent la valeur à l'intérieur du constructeur de la classe
-
+String libelle;
 int prix;
 
 class ProductFeaturesCardPage extends StatefulWidget {
+  String _Name;
   int _Price;
 
-  ProductFeaturesCardPage(int price) {
-    this._Price = price;
+  ProductFeaturesCardPage(String name, int price) {
+    this._Name = name
+    this._Price = price; 
     // ça évite le getter et j'ai la varialb en globale pour l'utiliser dans la classe suivante
+    libelle = name;
     prix = price;
+
   }
 
   @override
@@ -43,7 +47,7 @@ class _ProductFeaturesCardPageState extends State<ProductFeaturesCardPage> {
   final _category = TextEditingController();
   final _id = TextEditingController();
   final _isFeatured = TextEditingController();
-  final _name = TextEditingController();
+  final _name = TextEditingController()..text = libelle;
   final _price = TextEditingController()..text = prix.toString();
   final _location = TextEditingController();
   final _vendorId = TextEditingController();
