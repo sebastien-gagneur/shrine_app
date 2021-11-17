@@ -14,7 +14,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-
+import '../login.dart';
 import '../model/product.dart';
 
 Widget tapableText(String text, Function onTap) {
@@ -75,7 +75,12 @@ class ProductCard extends StatelessWidget {
               ),
               GestureDetector(
                 //child: new Text("Gesture"),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (BuildContext context) => LoginPage()),
+                  );
+                },
               ),
             ],
           ),
