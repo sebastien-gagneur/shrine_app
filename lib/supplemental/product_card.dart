@@ -17,6 +17,13 @@ import 'package:intl/intl.dart';
 
 import '../model/product.dart';
 
+Widget tapableText(String text, Function onTap) {
+  return GestureDetector(
+    onTap: onTap,
+    child: Text(text),
+  );
+}
+
 class ProductCard extends StatelessWidget {
   ProductCard({this.imageAspectRatio: 33 / 49, this.product}) : assert(imageAspectRatio == null || imageAspectRatio > 0);
 
@@ -65,6 +72,12 @@ class ProductCard extends StatelessWidget {
               Text(
                 product == null ? '' : formatter.format(product.price),
                 style: theme.textTheme.subtitle2,
+              ),
+              GestureDetector(
+                child: new Text("Gesture"),
+                onTap: () {
+                  print("ejfkejk)");
+                },
               ),
             ],
           ),
