@@ -71,15 +71,7 @@ class OneProductCardColumn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     print("product from one");
-    GestureDetector(
-          //child: new Text("Gesture"),
-          onTap: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (BuildContext context) => LoginPage()),
-            );
-          },
-        ),
+
     return ListView(
       reverse: true,
       physics: const ClampingScrollPhysics(),
