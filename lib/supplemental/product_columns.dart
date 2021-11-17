@@ -69,6 +69,7 @@ class OneProductCardColumn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print("product from one");
     return ListView(
       reverse: true,
       physics: const ClampingScrollPhysics(),
