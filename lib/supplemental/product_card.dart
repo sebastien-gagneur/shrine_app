@@ -54,12 +54,6 @@ class ProductCard extends StatelessWidget {
           aspectRatio: imageAspectRatio,
           child: imageWidget,
         ),
-        GestureDetector(
-          //child: new Text("Gesture"),
-          onTap: () {
-            print("1");
-          },
-        ),
         SizedBox(
           height: kTextBoxHeight * MediaQuery.of(context).textScaleFactor,
           width: 121.0,
