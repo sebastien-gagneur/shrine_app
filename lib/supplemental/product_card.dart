@@ -69,6 +69,8 @@ class ProductCard extends StatelessWidget {
                   print("click");
                   Navigator.push(
                     context,
+                    // le passage de paramètre pour l'affichage des informations produit se fait avec le contructeur de la classe ProductFeaturesCardPage
+                    // navigator passe les paramètre à la page suivate, notamment les informations sur le produit
                     MaterialPageRoute(builder: (BuildContext context) => ProductFeaturesCardPage(product.name, product.price)),
                   );
                 },
