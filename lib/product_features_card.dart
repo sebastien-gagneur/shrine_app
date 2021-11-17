@@ -43,6 +43,8 @@ class _ProductFeaturesCardPageState extends State<ProductFeaturesCardPage> {
 
   Category _currentCategory = Category.all;
 
+  _price.Text = _Price.toString();
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -105,7 +107,7 @@ class _ProductFeaturesCardPageState extends State<ProductFeaturesCardPage> {
             AccentColorOverride(
               color: kShrineBrown900,
               child: TextField(
-                controller: _Price,
+                controller: _price,
                 decoration: InputDecoration(
                   labelText: 'price',
                 ),
