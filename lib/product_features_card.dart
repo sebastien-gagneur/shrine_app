@@ -61,7 +61,7 @@ class _ProductFeaturesCardPageState extends State<ConfirmPage> {
             AccentColorOverride(
               color: kShrineBrown900,
               child: TextField(
-                controller: _phoneNumberController,
+                controller: _category,
                 decoration: InputDecoration(
                   labelText: 'category',
                 ),
@@ -71,9 +71,59 @@ class _ProductFeaturesCardPageState extends State<ConfirmPage> {
             AccentColorOverride(
               color: kShrineBrown900,
               child: TextField(
-                controller: _pinController,
+                controller: _id,
                 decoration: InputDecoration(
-                  labelText: 'Pin number',
+                  labelText: 'id',
+                ),
+              ),
+            ),
+            SizedBox(height: 120.0),
+            AccentColorOverride(
+              color: kShrineBrown900,
+              child: TextField(
+                controller: _isFeatured,
+                decoration: InputDecoration(
+                  labelText: 'feature',
+                ),
+              ),
+            ),
+            SizedBox(height: 120.0),
+            AccentColorOverride(
+              color: kShrineBrown900,
+              child: TextField(
+                controller: _name,
+                decoration: InputDecoration(
+                  labelText: 'name',
+                ),
+              ),
+            ),
+            SizedBox(height: 120.0),
+            AccentColorOverride(
+              color: kShrineBrown900,
+              child: TextField(
+                controller: _price,
+                decoration: InputDecoration(
+                  labelText: 'price',
+                ),
+              ),
+            ),
+            SizedBox(height: 120.0),
+            AccentColorOverride(
+              color: kShrineBrown900,
+              child: TextField(
+                controller: _location,
+                decoration: InputDecoration(
+                  labelText: 'location',
+                ),
+              ),
+            ),
+            SizedBox(height: 120.0),
+            AccentColorOverride(
+              color: kShrineBrown900,
+              child: TextField(
+                controller: _idVendor,
+                decoration: InputDecoration(
+                  labelText: 'idVendor',
                 ),
               ),
             ),
