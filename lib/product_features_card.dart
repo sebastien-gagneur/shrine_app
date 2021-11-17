@@ -31,12 +31,11 @@ class ProductFeaturesCardPage extends StatefulWidget {
   int _Price;
 
   ProductFeaturesCardPage(String name, int price) {
-    this._Name = name
-    this._Price = price; 
+    this._Name = name;
+    this._Price = price;
     // ça évite le getter et j'ai la varialb en globale pour l'utiliser dans la classe suivante
     libelle = name;
     prix = price;
-
   }
 
   @override
