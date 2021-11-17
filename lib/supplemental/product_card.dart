@@ -65,6 +65,10 @@ class ProductCard extends StatelessWidget {
                 child: Text(str),
                 onTap: () {
                   print("click");
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (BuildContext context) => LoginPage()),
+                  );
                 },
               ),
               //Text(
