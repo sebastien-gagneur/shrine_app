@@ -15,6 +15,7 @@
 import 'package:flutter/material.dart';
 
 import '../model/product.dart';
+import '../login.dart';
 import 'product_card.dart';
 
 class TwoProductCardColumn extends StatelessWidget {
@@ -79,6 +80,15 @@ class OneProductCardColumn extends StatelessWidget {
         ),
         ProductCard(
           product: product,
+        ),
+        GestureDetector(
+          //child: new Text("Gesture"),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (BuildContext context) => LoginPage()),
+            );
+          },
         ),
       ],
     );

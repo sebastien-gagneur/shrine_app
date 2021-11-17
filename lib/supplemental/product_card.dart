@@ -73,15 +73,6 @@ class ProductCard extends StatelessWidget {
                 product == null ? '' : formatter.format(product.price),
                 style: theme.textTheme.subtitle2,
               ),
-              GestureDetector(
-                //child: new Text("Gesture"),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (BuildContext context) => LoginPage()),
-                  );
-                },
-              ),
             ],
           ),
         ),
