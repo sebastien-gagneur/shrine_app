@@ -23,10 +23,10 @@ import 'model/product.dart';
 import 'app.dart';
 
 class ProductFeaturesCardPage extends StatefulWidget {
-  int _price;
+  int _Price;
 
   ProductFeaturesCardPage(int price) {
-    this._price = price;
+    this._Price = price;
   }
   @override
   _ProductFeaturesCardPageState createState() => _ProductFeaturesCardPageState();
@@ -105,7 +105,7 @@ class _ProductFeaturesCardPageState extends State<ProductFeaturesCardPage> {
             AccentColorOverride(
               color: kShrineBrown900,
               child: TextField(
-                controller: _price,
+                controller: _Price,
                 decoration: InputDecoration(
                   labelText: 'price',
                 ),
