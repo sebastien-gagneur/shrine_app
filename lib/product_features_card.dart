@@ -30,12 +30,12 @@ class ProductFeaturesCardPage extends StatefulWidget {
 class _ProductFeaturesCardPageState extends State<ConfirmPage> {
   
   final _category = = TextEditingController();
-  final _id = TextEditingController();;
-  final _isFeatured = TextEditingController();;
-  final _name = TextEditingController();;
-  final _price = TextEditingController();;
-  final _location = TextEditingController();;
-  final _vendorId = TextEditingController();;
+  final _id = TextEditingController();
+  final _isFeatured = TextEditingController();
+  final _name = TextEditingController();
+  final _price = TextEditingController();
+  final _location = TextEditingController();
+  final _vendorId = TextEditingController();
 
   Category _currentCategory = Category.all;
 
