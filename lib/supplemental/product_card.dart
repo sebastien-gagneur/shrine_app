@@ -15,6 +15,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import '../login.dart';
+import '../ProductFeaturesCardPage.dart';
 import '../model/product.dart';
 
 Widget tapableText(String text, Function onTap) {
